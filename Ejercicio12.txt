@@ -1,0 +1,42 @@
+Algoritmo ejercicio12
+
+	Definir contadorF, sumarAlturaF, contadorM, sumaAlturaM, sumaEdades, contadorEdades como Entero
+	
+	contadorF = 0
+	sumaAlturaF = 0
+	contadorM = 0 
+	sumaAlturaM = 0
+	sumaEdades = 0
+	contadorEdades = 0	
+	Hacer
+		
+		Escribir "INFORMACION: para salir ingrese una altura negativa"
+		
+		Escribir "Ingrese altura"
+		leer altura
+		
+		Escribir "Ingrese edad"
+		Leer edad
+		
+		Escribir "Ingrese sexo f = femenino ó m = masculino"
+		Leer sexo
+		
+		//datos
+		si sexo = "f" Entonces
+			contadorF = contadorF + 1
+			sumaAlturaF = sumaAlturaF + altura
+		SiNo
+			si sexo = "m" Entonces
+				contadorM = contadorM + 1
+				sumaAlturaM = sumaAlturaM + altura
+			FinSi
+			contadorEdades = contadorEdades + 1
+			sumaEdades = sumaEdades + edad
+		FinSi
+		
+	Hasta Que altura < 0
+	promedioAF = (sumaAlturaF / contadorF)
+	promedioAM = (sumaAlturaM / contadorM)
+	promedioEdades = (sumaEdades / contadorEdades)
+	
+FinAlgoritmo
